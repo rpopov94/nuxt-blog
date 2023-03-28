@@ -1,11 +1,13 @@
 <template>
   <div class="flex flex-wrap -ml-1 py-2">
     <div v-for="(tag, id) in tags" :key="id" class="px-1">
-      <div
-        class="px-2 text-lg text-black rounded-lg bg-black mx-1 mt-1 uppercase cursor-pointer tag"
-      >
-        {{ tag }} 🏷️
-      </div>
+        <nuxt-link :key="tag" :to="`/articles/tags/${tag}/`">
+        <div
+          class="px-2 text-lg text-black rounded-lg bg-black mx-1 mt-1 uppercase cursor-pointer tag"
+        >
+          {{ tag }} 🏷️
+        </div>
+      </nuxt-link>
     </div>
   </div>
 </template>

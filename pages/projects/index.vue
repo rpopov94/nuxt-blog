@@ -1,30 +1,19 @@
 <template>
   <div>
-    <b-row>
-      <b-col v-for="(project, id) in projects" :key="id" md="4">
-        <div class="mb-2">
-          <b-card
-            :title="project.layout"
-            :img-src="'/images/' + project.image"
-            img-alt="Image"
-            img-top
-            tag="article"
-            class="h-100"
-            style="min-height: 400px; max-width: 400px"
-          >
-            <b-card-text>
-              {{ project.abstract }}
-            </b-card-text>
-            <b-button :href="project.path" variant="primary">
-              {{ project.path }} Follow
-            </b-button>
-          </b-card>
-        </div>
-      </b-col>
-    </b-row>
-    <pre>
-      {{ projects }}
-    </pre>
+    <div v-for="(project, id) in projects" :key="id" md="4">
+      <div>
+        <img
+          :src="project.image"
+        >
+        <b-card :title="project.layout">
+          <b-card-text>
+            {{ project.abstract }}
+          </b-card-text>
+
+          <b-button :href="project.path" class="card-link">Go</b-button>
+        </b-card>
+      </div>
+    </div>
   </div>
 </template>
 
