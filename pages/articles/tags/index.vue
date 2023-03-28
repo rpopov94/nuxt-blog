@@ -1,13 +1,9 @@
 <template>
-$END$
+  <div>tags</div>
 </template>
 
 <script>
-export default {
-name: "index"
-}
+export default {}
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

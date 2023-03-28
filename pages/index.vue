@@ -1,11 +1,18 @@
 <template>
-  <Tutorial/>
+  <div>{{ projects }}</div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue'
+<script>
+export default {
+  async asyncData ({ $content, params }) {
+    const projects = await $content('articles')
+      .only(['layout', 'title'])
+      .sortBy('date', 'desc')
+      .fetch()
 
-export default Vue.extend({
-  name: 'IndexPage'
-})
+    return {
+      projects
+    }
+  }
+}
 </script>
