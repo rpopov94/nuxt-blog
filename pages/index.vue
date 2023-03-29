@@ -29,7 +29,6 @@
         </div>
       </div>
       <div class="col-md-6">
-        <p>Skills:</p>
         <p>Tags:</p>
         <div class="flex">
           <TagCloud :articles="articles" />
