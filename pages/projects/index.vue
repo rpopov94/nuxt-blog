@@ -1,19 +1,23 @@
 <template>
-  <div>
-    <div v-for="(project, id) in projects" :key="id" md="4">
+  <div class="lg:px-32 px-2 sm:px-4">
+    <ul v-for="(project, id) in projects" :key="id" class="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-8">
       <div>
-        <img
-          :src="project.image"
-        >
         <b-card :title="project.layout">
+          <img
+            v-if="project.image"
+            :src="'/images/' + project.image"
+            style="max-width: 100%; max-height: 2.0rem;"
+          >
           <b-card-text>
             {{ project.abstract }}
           </b-card-text>
 
-          <b-button :href="project.path" class="card-link">Go</b-button>
+          <b-button :href="project.path" class="card-link">
+            Go
+          </b-button>
         </b-card>
       </div>
-    </div>
+    </ul>
   </div>
 </template>
 

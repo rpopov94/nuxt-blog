@@ -1,11 +1,13 @@
 <template>
   <div class="flex-wrap justify-center">
-    <tag
-      v-for="tag in tagCounts().slice(0, limit)"
-      :key="tag[0]"
-      :tag="tag[0]"
-      :count="tag[1]"
-    />
+    <div v-for="tag in tagCounts().slice(0, limit)" :key="tag">
+      <tag
+        v-if="tag"
+        :key="tag[0]"
+        :tag="tag[0]"
+        :count="tag[1]"
+      />
+    </div>
   </div>
 </template>
 
@@ -15,9 +17,9 @@ import Tag from '~/components/Tag.vue'
 export default {
   components: { Tag },
   props: {
-    articles: {
+    items: {
       type: Array,
-      default: () => []
+      default: null
     },
     limit: {
       type: Number,
@@ -39,7 +41,7 @@ export default {
     },
     tagCounts () {
       return Object.entries(
-        this.counter(this.mergeArrays(this.articles.map(x => x.tags)))
+        this.counter(this.mergeArrays(this.items.filter(x => x.tags !== undefined).map(x => x.tags)))
       ).sort((a, b) => b[1] - a[1])
     }
   }
@@ -47,5 +49,7 @@ export default {
 </script>
 
 <style scoped>
-div{display: flex}
+  div{
+    display: flex
+  }
 </style>

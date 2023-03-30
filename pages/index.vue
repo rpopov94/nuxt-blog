@@ -19,19 +19,23 @@
             Moskow, Russia
           </p>
           <div class="d-flex justify-content-center mb-2">
-            <b-button type="button" class="ms-1" to="/contacts">
+            <b-button type="button" class="ms-1 mx-2" to="/contacts">
               Сontact with me
             </b-button>
-            <button type="button" class="btn btn-outline-primary ms-1">
+            <b-button type="button" class="btn ms-1" to="/files/resume.pdf">
               Resume
-            </button>
+            </b-button>
           </div>
         </div>
       </div>
       <div class="col-md-6">
-        <p>Tags:</p>
+        <p class="text-lg font-medium mb-4">Tags by projects</p>
+        <div class="mb-4">
+          <TagCloud :items="projects" />
+        </div>
+        <p class="text-lg font-medium mb-4">Tags by articles:</p>
         <div class="flex">
-          <TagCloud :articles="articles" />
+          <TagCloud :items="articles" />
         </div>
       </div>
     </div>
@@ -60,12 +64,38 @@ export default {
       .where({ draft: { $ne: true } })
       .sortBy('date', 'desc')
       .fetch()
-    articles = articles.filter(x => !x.path.startsWith('/skills/'))
+    articles = articles.filter(x => !x.path.startsWith('/projects/'))
+    let projects = await $content({ deep: true })
+      .only([
+        'title',
+        'description',
+        'image',
+        'slug',
+        'author',
+        'date',
+        'path',
+        'tags',
+        'external'
+      ])
+      .where({ draft: { $ne: true } })
+      .sortBy('date', 'desc')
+      .fetch()
+    projects = projects.filter(x => !x.path.startsWith('/articles/'))
     return {
-      articles
+      articles,
+      projects
     }
   }
 }
 </script>
-<style>
+<style scoped>
+.text-lg {
+  font-size: 1.125rem;
+}
+.font-medium {
+  font-weight: 500;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
 </style>

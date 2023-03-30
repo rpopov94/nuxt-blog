@@ -1,7 +1,10 @@
 ---
 layout: "AUR and Official Arch Linux Repository Data Analysis"
 comments: true
-image: /static/official_repos.png
+image: official_repos.png
+tags:
+  - ML
+  - Linux
 abstract: "testtesttest"
 date: 2017-12-02
 ---

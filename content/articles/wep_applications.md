@@ -5,7 +5,7 @@ tags:
   - ORM
   - SQLAlchemy
   - Django ORM
-image: img/Python-WB01.png
+image: WebFrameworks.png
 content: "здесь будет контент"
 date: 2023-03-27
 ---
