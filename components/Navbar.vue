@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto max-w-6xl p-4 lg:px-16 text-center">
+  <div class="text-center">
     <b-navbar toggleable="lg" type="dark" variant="info">
       <b-navbar-brand href="/">
         Popov Roman

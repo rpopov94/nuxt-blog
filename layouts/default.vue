@@ -1,11 +1,13 @@
 <template>
-  <b-container>
+  <div>
     <Navbar />
-    <div class="mx-auto max-w-6xl p-4 lg:px-16">
-      <nuxt />
+    <div class="container min-vh-100">
+      <main class="pb-5">
+        <nuxt />
+      </main>
     </div>
     <Footer />
-  </b-container>
+  </div>
 </template>
 
 <script>
