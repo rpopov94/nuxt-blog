@@ -30,17 +30,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6 container">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="font-medium text-center mb-4">
-              <div class="flex flex-row space-y-6 border-2 -mx-3 p-6 rounded-2xl dark:border-gray-700 dark:bg-gray-800">
-                poihj
-              </div>
-            </h5>
-          </div>
-        </div>
-      </div>
+      <skills-card />
       <div class="mt-4">
         <h5 class="font-medium mb-3">
           Tags by projects
@@ -114,32 +104,5 @@ export default {
 }
 .mb-4 {
   margin-bottom: 1rem;
-}
-.container {
-  max-width: 800px; /* задаем максимальную ширину контейнера */
-  margin: 0 auto; /* центрируем контейнер по горизонтали */
-}
-
-.card {
-  border: 1px solid #ccc; /* задаем границу для карточки */
-  border-radius: 5px; /* скругляем углы карточки */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* добавляем тень */
-  padding: 20px; /* задаем отступы внутри карточки */
-  background-color: #fff; /* устанавливаем цвет фона */
-}
-
-.card-body {
-  margin-top: 10px; /* задаем отступ сверху для содержимого карточки */
-}
-
-ul {
-  list-style: none; /* убираем маркеры списка */
-  margin: 0; /* убираем отступы по умолчанию */
-  padding: 0; /* убираем отступы по умолчанию */
-}
-
-li {
-  margin-bottom: 10px; /* задаем отступ между элементами списка */
-  font-size: 18px; /* устанавливаем размер шрифта */
 }
 </style>

@@ -1,5 +1,7 @@
 <template>
   <div>
+    <div class="container min-vh-100">
+      <main class="pb-5">
     <img
       v-if="project.image"
       :src="'/images/' + project.image"
@@ -18,6 +20,8 @@
       Последнее обновление: {{ formatDate(project.updatedAt) }}
     </p>
     <nuxt-content class="markdown" :document="project" />
+      </main>
+    </div>
   </div>
 </template>
 

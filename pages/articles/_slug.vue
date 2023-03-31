@@ -1,5 +1,7 @@
 <template>
-  <div>
+  <div class="py-3">
+    <div class="container min-vh-100">
+      <main class="pb-5">
     <img
       :src="'/images/' + article.image"
       class="pt-2 w-full object-cover cover-image"
@@ -17,6 +19,8 @@
       Последнее обновление: {{ formatDate(article.updatedAt) }}
     </p>
     <nuxt-content class="markdown" :document="article" />
+      </main>
+    </div>
   </div>
 </template>
 

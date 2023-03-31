@@ -1,5 +1,7 @@
 <template>
   <div>
+    <div class="container min-vh-100">
+      <main class="pb-5">
     <div v-for="(article, id) in articles" :key="id" md="4">
       <div>
         <b-card :title="article.layout">
@@ -17,6 +19,8 @@
           </b-button>
         </b-card>
       </div>
+    </div>
+      </main>
     </div>
   </div>
 </template>
