@@ -5,7 +5,7 @@
       <div class="col-md-6">
         <div class="text-center">
           <img
-            src="/images/avatar.jpg"
+            src="/portfolio/images/avatar.jpg"
             class="rounded-circle img-fluid"
             style="width: 150px;"
           >
@@ -20,7 +20,7 @@
               Moscow, Russia
             </p>
             <div class="d-flex justify-content-center">
-              <router-link to="/contacts" class="btn btn-secondary mx-2">
+              <router-link to="/portfolio/contacts" class="btn btn-secondary mx-2">
                 Contact with me
               </router-link>
               <router-link to="/files/resume.pdf" class="btn btn-primary">

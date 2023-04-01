@@ -3,7 +3,8 @@
     <div class="container min-vh-100">
       <main class="pb-5">
     <img
-      :src="'/images/' + article.image"
+      v-if="article.image"
+      :src="'/portfolio/images/' + article.image"
       class="pt-2 w-full object-cover cover-image"
       style="height: 24rem; width: 100%; padding-top: 0"
       :alt="article.image"

@@ -4,7 +4,7 @@
       <main class="pb-5">
     <img
       v-if="project.image"
-      :src="'/images/' + project.image"
+      :src="'/portfolio/images/' + project.image"
       class="pt-2 w-full object-cover cover-image"
       style="height: 24rem; width: 100%; padding-top: 0"
       :alt="project.image"

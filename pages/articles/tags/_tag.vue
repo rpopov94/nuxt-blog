@@ -7,14 +7,14 @@
         <b-card :title="article.layout">
           <img
             v-if="article.image"
-            :src="'/images/' + article.image"
+            :src="'/portfolio/images/' + article.image"
             style="max-width: 100%; max-height: 2.0rem;"
           >
           <b-card-text>
             {{ article.abstract }}
           </b-card-text>
 
-          <b-button :href="article.path" class="card-link">
+          <b-button :href="'/portfolio/' + article.path" class="card-link">
             Go
           </b-button>
         </b-card>

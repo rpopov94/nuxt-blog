@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link :key="tag" :to="`/articles/tags/${tag}/`">
+  <nuxt-link :key="tag" :to="`/portfolio/articles/tags/${tag}`">
     <div
       class="
         px-2

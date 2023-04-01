@@ -5,14 +5,14 @@
         <b-card :title="project.layout">
           <img
             v-if="project.image"
-            :src="'/images/' + project.image"
+            :src="'/portfolio/images/' + project.image"
             style="max-width: 100%; max-height: 2.0rem;"
           >
           <b-card-text>
             {{ project.abstract }}
           </b-card-text>
 
-          <b-button :href="project.path" class="card-link">
+          <b-button :href="'/portfolio/' + project.path" class="card-link">
             Go
           </b-button>
         </b-card>
