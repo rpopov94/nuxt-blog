@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/articles/tags/algorithms_and_data_structures", {data:[{tags:[]}],fetch:{},mutations:[]});
