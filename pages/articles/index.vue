@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mt-5">
     <b-row>
       <b-col v-for="(article, id) in articles" :key="id" md="4">
         <div class="mb-2">
@@ -15,7 +15,7 @@
             <b-card-text>
               {{ article.abstract }}
             </b-card-text>
-            <b-button :href="'/portfolio/' + article.path" variant="primary">
+            <b-button :href="'/portfolio' + article.path" variant="primary">
               Follow
             </b-button>
           </b-card>

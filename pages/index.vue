@@ -31,32 +31,27 @@
         </div>
       </div>
       <skills-card />
-      <div class="mt-4">
-        <h5 class="font-medium mb-3">
-          Tags by projects
-        </h5>
-        <TagCloud :items="projects" />
-      </div>
-      <div class="mt-4">
-        <h5 class="font-medium mb-3">
-          Tags by articles:
-        </h5>
-        <div class="d-flex flex-wrap">
-          <TagCloud :items="articles" />
-        </div>
-      </div>
+<!--      <div class="mt-4">-->
+<!--      <div class="mt-4">-->
+<!--        <h5 class="font-medium mb-3">-->
+<!--          Tags:-->
+<!--        </h5>-->
+<!--        <div class="d-flex flex-wrap">-->
+<!--          <TagCloud :items="tags" />-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
     </div>
   </div>
 </template>
 
 <script>
 import Welcome from '~/components/Welcome.vue'
-import TagCloud from '~/components/TagCloud.vue'
 
 export default {
-  components: { TagCloud, Welcome },
+  components: { Welcome },
   async asyncData ({ $content }) {
-    let articles = await $content({ deep: true })
+    let tags = await $content({ deep: true })
       .only([
         'title',
         'description',
@@ -71,34 +66,14 @@ export default {
       .where({ draft: { $ne: true } })
       .sortBy('date', 'desc')
       .fetch()
-    articles = articles.filter(x => !x.path.startsWith('/projects/'))
-    let projects = await $content({ deep: true })
-      .only([
-        'title',
-        'description',
-        'image',
-        'slug',
-        'author',
-        'date',
-        'path',
-        'tags',
-        'external'
-      ])
-      .where({ draft: { $ne: true } })
-      .sortBy('date', 'desc')
-      .fetch()
-    projects = projects.filter(x => !x.path.startsWith('/articles/'))
+    tags = tags.filter(x => !x.path.startsWith('/projects/'))
     return {
-      articles,
-      projects
+      tags
     }
   }
 }
 </script>
 <style scoped>
-.text-lg {
-  font-size: 1.125rem;
-}
 .font-medium {
   font-weight: 500;
 }

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="container min-vh-100">
+    <div class="container min-vh-100 mt-4">
       <main class="pb-5">
         <b-card header="Contacts">
         <b-list-group>

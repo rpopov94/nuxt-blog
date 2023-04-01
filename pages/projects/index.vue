@@ -1,5 +1,5 @@
 <template>
-  <div class="lg:px-32 px-2 sm:px-4">
+  <div class="lg:px-32 px-2 sm:px-4 mt-4">
     <ul v-for="(project, id) in projects" :key="id" class="grid grid-cols-1 lg:grid-cols-2 gap-6 pb-8">
       <div>
         <b-card :title="project.layout">
@@ -12,7 +12,7 @@
             {{ project.abstract }}
           </b-card-text>
 
-          <b-button :href="'/portfolio/' + project.path" class="card-link">
+          <b-button :href="'/portfolio' + project.path" class="card-link">
             Go
           </b-button>
         </b-card>

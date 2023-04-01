@@ -1,7 +1,11 @@
 export default {
   target: 'static',
   router: {
-    base: '/portfolio/'
+    base: '/portfolio/',
+    trailingSlash: false,
+    middleware: [
+      'redirect-404'
+    ]
   },
   generate: {
     dir: 'docs',

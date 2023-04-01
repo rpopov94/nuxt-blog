@@ -1,5 +1,5 @@
 <template>
-  <div class="py-3">
+  <div class="mt-auto">
     <div class="container min-vh-100">
       <main class="pb-5">
     <img
