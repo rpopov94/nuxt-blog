@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/articles/tags/oop_python", {data:[{tags:[]}],fetch:{},mutations:[]});

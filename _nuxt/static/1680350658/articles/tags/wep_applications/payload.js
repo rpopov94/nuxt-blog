@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/articles/tags/wep_applications", {data:[{tags:[]}],fetch:{},mutations:[]});
