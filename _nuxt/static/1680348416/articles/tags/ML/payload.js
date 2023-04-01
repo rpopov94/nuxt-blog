@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/articles/tags/ML", {data:[{articles:[]}],fetch:{},mutations:[]});
