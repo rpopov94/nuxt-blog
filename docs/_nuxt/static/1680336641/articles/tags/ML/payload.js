@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/articles/tags/ML", {data:[{articles:[{slug:"test",image:"official_repos.png",tags:["ML","Linux"],abstract:"testtesttest",date:"2017-12-02T00:00:00.000Z",path:"\u002Fprojects\u002Ftest"}]}],fetch:{},mutations:[]});

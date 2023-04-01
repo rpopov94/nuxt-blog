@@ -1,0 +1,13 @@
+---
+layout: project
+title: "AUR and Official Arch Linux Repository Data Analysis"
+comments: true
+permalink: /projects/arch-linux-data
+github: briancaffey/AUR-data
+image: official_repos.png
+abstract: "testtesttest"
+link: http://briancaffey.github.io/2017/12/02/arch-linux-package-data-analysis.html
+date: 2017-12-02
+---
+
+This project explores data I collected from archlinux.org.
