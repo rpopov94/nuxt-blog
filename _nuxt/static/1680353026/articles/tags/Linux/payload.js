@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/articles/tags/Linux", {data:[{tags:[]}],fetch:{},mutations:[]});
