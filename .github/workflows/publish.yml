@@ -25,9 +25,9 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
 
-      - run: yarn
-      - run: yarn lint
-      - run: yarn generate
+      - run: |
+             yarn generate
+             yarn deploy
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3

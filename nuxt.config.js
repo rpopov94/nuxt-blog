@@ -8,8 +8,7 @@ export default {
     API_URL: process.env.API_URL
   },
   generate: {
-    dir: 'docs',
-    subFolders: true
+    dir: 'docs'
   },
   head: {
     title: 'Popov Roman',
