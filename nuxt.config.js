@@ -1,7 +1,7 @@
 export default {
   target: 'static',
   router: {
-    base: '/',
+    base: '/portfolio/',
     trailingSlash: false
   },
   env: {
@@ -9,7 +9,7 @@ export default {
   },
   generate: {
     dir: 'docs',
-    subFolders: false
+    subFolders: true
   },
   head: {
     title: 'Popov Roman',
@@ -40,7 +40,7 @@ export default {
     '@nuxtjs/sitemap'
   ],
   sitemap: {
-    hostname: 'https://rpopov94.github.io/'
+    hostname: 'https://rpopov94.github.io/portfolio/'
   },
   build: {
     extend (config, ctx) {}
