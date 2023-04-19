@@ -6,18 +6,18 @@
         <div>
           <div>
             <h5>Popov Roman</h5>
-            <p><a href="tel:+79102723716"><img src="/icons/tel.svg" alt="phone"></a> +7(910) 272 37-16</p>
-            <p><a href="mailto:i@romanpopoff.ru"><img src="/icons/mail.svg" alt="e-mail"></a> i@romanpopoff.ru</p>
-            <p><a href="http://t.me/rpopov94"><img src="/icons/tg.svg" alt="tg"></a> @popov94</p>
-            <p><a href="https://wa.me/79102723716"><img src="/icons/whatsapp.svg" alt="whatsapp"></a> +7(910) 272 37-16</p>
-            <p><a href="http://github.com/rpopov94"><img src="/icons/git.svg" alt="git"></a> Github</p>
+            <p><a href="tel:+79102723716"><img src="icons/tel.svg" alt="phone"></a> +7(910) 272 37-16</p>
+            <p><a href="mailto:i@romanpopoff.ru"><img src="icons/mail.svg" alt="e-mail"></a> i@romanpopoff.ru</p>
+            <p><a href="http://t.me/rpopov94"><img src="icons/tg.svg" alt="tg"></a> @popov94</p>
+            <p><a href="https://wa.me/79102723716"><img src="icons/whatsapp.svg" alt="whatsapp"></a> +7(910) 272 37-16</p>
+            <p><a href="http://github.com/rpopov94"><img src="icons/git.svg" alt="git"></a> Github</p>
           </div>
         </div>
       </div>
       <div class="col-md-6 order-md-1">
         <div class="text-center">
           <img
-            src="/images/avatar.jpg"
+            src="images/avatar.jpg"
             class="img-fluid"
             style="width: 300px;"
           >

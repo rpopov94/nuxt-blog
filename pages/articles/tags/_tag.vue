@@ -10,7 +10,7 @@
             <div class="card mb-3">
               <img
                 v-if="tag.image"
-                :src="'/images/' + tag.image"
+                :src="'images/' + tag.image"
                 class="card-img-top img-fluid"
                 :alt="tag.image"
                 style="max-height: 200px"

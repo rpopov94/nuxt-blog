@@ -5,7 +5,7 @@
         <div class="mb-2">
           <b-card
             :title="article.layout"
-            :img-src="'/images/' + article.image"
+            :img-src="'images/' + article.image"
             img-alt="Image"
             img-top
             tag="article"
