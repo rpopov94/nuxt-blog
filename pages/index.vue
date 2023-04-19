@@ -15,7 +15,7 @@
             <b-card-text>
               {{ article.abstract }}
             </b-card-text>
-            <b-button :href="article.path" variant="primary">
+            <b-button :href="'/nuxt_portfolio_blog/' + article.path" variant="primary">
               Follow
             </b-button>
           </b-card>
