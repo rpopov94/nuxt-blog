@@ -1,7 +1,7 @@
 export default {
   target: 'static',
   router: {
-    base: '/portfolio/',
+    base: '/nuxt_portfolio_blog/',
     trailingSlash: false
   },
   env: {
@@ -36,12 +36,8 @@ export default {
   modules: [
     '@nuxtjs/axios',
     'bootstrap-vue/nuxt',
-    '@nuxt/content',
-    '@nuxtjs/sitemap'
+    '@nuxt/content'
   ],
-  sitemap: {
-    hostname: 'https://rpopov94.github.io/portfolio/'
-  },
   build: {
     extend (config, ctx) {}
   }
