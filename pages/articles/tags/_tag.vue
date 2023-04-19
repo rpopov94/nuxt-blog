@@ -2,21 +2,29 @@
   <div class="mt-4">
     <div class="container min-vh-100">
       <main class="pb-5">
-        <div v-for="(article, id) in tags" :key="id" md="4">
-          <div class="py-3">
-            <b-card :title="article.layout">
+        <div v-if="tags.length === 0">
+          <error />
+        </div>
+        <div v-else>
+          <div v-for="(tag, id) in tags" :key="id" md="4">
+            <div class="card mb-3">
               <img
-                v-if="article.image"
-                :src="'/portfolio/images/' + article.image"
-                style="max-width: 100%; max-height: 2.0rem;"
+                v-if="tag.image"
+                :src="'/images/' + tag.image"
+                class="card-img-top img-fluid"
+                :alt="tag.image"
+                style="max-height: 200px"
               >
-              <b-card-text>
-                {{ article.abstract }}
-              </b-card-text>
-              <b-button :href="'/portfolio/articles/' + article.slug" class="card-link">
-                Go
-              </b-button>
-            </b-card>
+              <div class="card-body">
+                <h5 class="card-title">
+                  {{ tag.layout }}
+                </h5>
+                <p>{{ tag.abstract }}</p>
+                <b-button :href="'/articles/' + tag.slug" class="card-link">
+                  Go
+                </b-button>
+              </div>
+            </div>
           </div>
         </div>
       </main>
@@ -30,13 +38,9 @@ export default {
   async asyncData ({ $content, params }) {
     let tags = await $content({ deep: true })
       .only([
-        'title',
-        'description',
+        'layout',
         'image',
         'slug',
-        'author',
-        'date',
-        'path',
         'tags',
         'abstract'
       ])

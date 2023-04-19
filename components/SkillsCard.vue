@@ -2,7 +2,7 @@
   <div class="col-md-6 container">
     <div class="card">
       <div class="card-header">
-        <h5 class="card-title text-center">Навыки</h5>
+        <h5 class="card-title text-center"></h5>
       </div>
       <div class="card-body">
         <ul class="list-group list-group-flush">

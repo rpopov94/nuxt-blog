@@ -1,19 +1,19 @@
 <template>
-    <div class="mx-auto max-w-6xl p-4 lg:px-16 text-center">
-      <hr>
-      <div class="grid grid-cols-5 items-center gap-4 px-4">
-        <a href="https://github.com/rpopov94">
-          <img src="icons/git.svg">
-        </a>
-        <a href="https://t.me/rpopov94">
-          <img src="icons/tg.svg">
-        </a>
-        <a href="https://hh.ru/resume/dcc8fc29ff07df16670039ed1f534d6e576d6b">
-          <img src="icons/hh.svg">
-        </a>
-      </div>
-      © {{ year }} Popov Roman
+  <div class="text-center">
+    <hr>
+    <div class="d-grid gap-4 grid-cols-3">
+      <b-link href="https://github.com/rpopov94">
+        <b-img src="icons/git.svg" />
+      </b-link>
+      <b-link href="https://t.me/rpopov94">
+        <b-img src="icons/tg.svg" />
+      </b-link>
+      <b-link href="https://hh.ru/resume/dcc8fc29ff07df16670039ed1f534d6e576d6b">
+        <b-img src="icons/hh.svg" />
+      </b-link>
     </div>
+    © {{ year }} Popov Roman
+  </div>
 </template>
 
 <script>

@@ -1,19 +1,16 @@
 <template>
   <div class="text-center">
     <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="/portfolio">
+      <b-navbar-brand href="/">
         Popov Roman
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse" />
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="/portfolio/articles">
-            Blog
+          <b-nav-item href="/files/resume.pdf">
+            Resume
           </b-nav-item>
-          <b-nav-item href="/portfolio/projects">
-            Projects
-          </b-nav-item>
-          <b-nav-item href="/portfolio/contacts">
+          <b-nav-item href="/contacts">
             Contacts
           </b-nav-item>
         </b-navbar-nav>

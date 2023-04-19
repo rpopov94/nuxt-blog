@@ -1,11 +1,11 @@
 export default {
   target: 'static',
   router: {
-    base: '/portfolio/',
-    trailingSlash: false,
-    middleware: [
-      'redirect-404'
-    ]
+    base: '/',
+    trailingSlash: false
+  },
+  env: {
+    API_URL: process.env.API_URL
   },
   generate: {
     dir: 'docs',
@@ -29,8 +29,6 @@ export default {
 
   css: [],
 
-  plugins: ['~/plugins/moment.js'],
-
   components: true,
 
   buildModules: ['@nuxtjs/eslint-module'],
@@ -42,7 +40,7 @@ export default {
     '@nuxtjs/sitemap'
   ],
   sitemap: {
-    hostname: 'https://rpopov94.github.io/portfolio/'
+    hostname: 'https://rpopov94.github.io/'
   },
   build: {
     extend (config, ctx) {}

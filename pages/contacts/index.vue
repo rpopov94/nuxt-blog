@@ -1,17 +1,52 @@
 <template>
-  <div>
-    <div class="container min-vh-100 mt-4">
-      <main class="pb-5">
-        <b-card header="Contacts">
-        <b-list-group>
-          <b-list-group-item>
+  <div class="vh-100">
+    <welcome />
+    <div class="row">
+      <div class="col-md-6 order-md-2">
+        <div>
+          <div>
             <h5>Popov Roman</h5>
-            <p>Phone: +7(910) 272 37-16</p>
-            <p>e-mail: i@romanpopoff.ru</p>
-          </b-list-group-item>
-        </b-list-group>
-        </b-card>
-      </main>
+            <p><a href="tel:+79102723716"><img src="/icons/tel.svg" alt="phone"></a> +7(910) 272 37-16</p>
+            <p><a href="mailto:i@romanpopoff.ru"><img src="/icons/mail.svg" alt="e-mail"></a> i@romanpopoff.ru</p>
+            <p><a href="http://t.me/rpopov94"><img src="/icons/tg.svg" alt="tg"></a> @popov94</p>
+            <p><a href="https://wa.me/79102723716"><img src="/icons/whatsapp.svg" alt="whatsapp"></a> +7(910) 272 37-16</p>
+            <p><a href="http://github.com/rpopov94"><img src="/icons/git.svg" alt="git"></a> Github</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 order-md-1">
+        <div class="text-center">
+          <img
+            src="/images/avatar.jpg"
+            class="img-fluid"
+            style="width: 300px;"
+          >
+        </div>
+      </div>
+    </div>
+    <div id="map-container-google-1" class="z-depth-1-half map-container">
+      <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen />
     </div>
   </div>
 </template>
+
+<script>
+</script>
+
+<style>
+b-list-group {
+  border: none;
+}
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.map-container iframe{
+  margin: 19px 32px 32px 32px;
+  height:468px;
+  width:1312px;
+  position:absolute;
+}
+</style>
