@@ -26,8 +26,8 @@ jobs:
             ${{ runner.os }}-node-
 
       - run: |
-             yarn generate
-             yarn deploy
+             npm run generate
+             npm run deploy
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
