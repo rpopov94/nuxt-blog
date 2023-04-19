@@ -1,7 +1,7 @@
 <template>
   <div class="text-center">
     <b-navbar toggleable="lg" type="dark" variant="info">
-      <b-navbar-brand href="/">
+      <b-navbar-brand href="/nuxt_portfolio_blog">
         Popov Roman
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse" />
