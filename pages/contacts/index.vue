@@ -5,7 +5,7 @@
       <div class="col-md-6 order-md-2">
         <div>
           <div class="mt-2">
-            <h5>Popov Roman</h5>
+            <h3 class="mb-3">Popov Roman</h3>
             <p><a href="tel:+79102723716"><img src="/icons/tel.svg" alt="phone"></a> +7(910) 272 37-16</p>
             <p><a href="mailto:i@romanpopoff.ru"><img src="/icons/mail.svg" alt="e-mail"></a> i@romanpopoff.ru</p>
             <p><a href="http://t.me/rpopov94"><img src="/icons/tg.svg" alt="tg"></a> @popov94</p>
@@ -19,13 +19,10 @@
           <img
             src="/images/avatar.jpg"
             class="img-fluid"
-            style="width: 300px;"
+            style="width: 600px;"
           >
         </div>
       </div>
-    </div>
-    <div id="map-container-google-1" class="z-depth-1-half map-container">
-      <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" allowfullscreen />
     </div>
   </div>
 </template>

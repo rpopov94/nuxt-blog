@@ -6,6 +6,5 @@ tags:
   - SQLAlchemy
   - Django ORM
 image: oop.png
-content: "здесь будет контент"
 date: 2023-03-27
 ---

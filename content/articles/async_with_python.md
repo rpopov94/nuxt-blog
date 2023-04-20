@@ -5,6 +5,5 @@ tags:
   - asyncio
   - threading
 image: asyncio.png
-content: "здесь будет контент"
 date: 2023-03-27
 ---
