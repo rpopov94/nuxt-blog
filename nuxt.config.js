@@ -46,15 +46,14 @@ export default {
         .only(['path', 'draft'])
         .where({ draft: { $ne: true } })
         .fetch()
-      const projects = await $content('projects').only(['path']).fetch()
+      const articles = await $content('articles').only(['path']).fetch()
 
       return []
         .concat(
           ...posts
-            .filter(x => !x.path.startsWith('/projects/'))
             .map(w => w.path)
         )
-        .concat(...projects.map(p => p.path))
+        .concat(...articles.map(p => p.path))
     }
   },
   build: {
