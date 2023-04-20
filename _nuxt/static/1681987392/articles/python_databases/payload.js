@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/articles/python_databases", (function(a){return {data:[{}],fetch:{},mutations:[["articles\u002FsetArticle",[{layout:"Базы данных в Python",abstract:"Эта статья описывает работу с базами данных в Python",tags:["ORM","SQLAlchemy","Django ORM"],image:"Python-SQL.png",body:{type:"root",children:[]},createdAt:a,updatedAt:a}]]]}}("2023-04-20T10:42:04.322Z")));
