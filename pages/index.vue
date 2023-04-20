@@ -1,14 +1,20 @@
 <template>
   <div class="mt-5">
-    <div class="text-center"> <h1>Hi! I'm Popov Roman</h1></div>
-    <div class="text-center">
-      <img
-        src="images/avatar.jpg"
-        class="img-fluid"
-        style="width: 500px;"
-      >
-    </div>
-    <welcome />
+    <b-row>
+      <b-col md="6">
+        <div class="text-center">
+          <img
+            src="images/avatar.jpg"
+            class="img-fluid"
+            style="width: 500px;"
+          >
+        </div>
+        <contacts />
+      </b-col>
+      <b-col md="6">
+        <welcome />
+      </b-col>
+    </b-row>
     <div class="text-center"><h3>List my projects</h3></div>
     <hr>
     <b-row>

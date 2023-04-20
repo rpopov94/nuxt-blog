@@ -48,15 +48,11 @@ export default {
         .fetch()
       const projects = await $content('projects').only(['path']).fetch()
       const articles = await $content('articles').only(['path']).fetch()
-      return []
-        .concat(
-          ...posts
-            .map(w => w.path)
-        )
-        .concat(...projects.map(p => p.path))
-        .concat(
-          ...articles
-            .map(a => a.path))
+      return [
+        ...posts.map(w => w.path),
+        ...projects.map(p => p.path),
+        ...articles.map(a => a.path)
+      ]
     }
   },
   build: {

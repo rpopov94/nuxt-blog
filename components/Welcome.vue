@@ -1,7 +1,7 @@
 <template>
-  <div class="mx-auto max-w-6xl p-3 text-center">
-    <div class="card">
-      <div class="card-body" style="font-size: 20px;">
+  <div class="mx-auto max-w-6xl p-3 text-center order-md-1">
+    <div class="card border-0">
+      <div class="card-body" style="font-size: 24px;">
         Hi! I'm a Python developer with a passion for creating innovative
         solutions. I have 5 years of experience in the technology industry,
         which has allowed me to develop a deep understanding of technological

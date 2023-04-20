@@ -1,5 +1,5 @@
 <template>
-  <div class="text-center">
+  <div class="text-center temp">
     <b-navbar toggleable="lg" type="dark" variant="info">
       <b-navbar-brand href="/">
         Popov Roman
@@ -13,9 +13,6 @@
           <b-nav-item href="/files/resume.pdf">
             Resume
           </b-nav-item>
-          <b-nav-item href="/contacts">
-            Contacts
-          </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -28,4 +25,8 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.temp {
+  font-size: 24px;
+}
+</style>
