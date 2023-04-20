@@ -1,6 +1,5 @@
 <template>
   <div class="vh-100">
-    <welcome />
     <div class="row">
       <div class="col-md-6 order-md-2">
         <div>

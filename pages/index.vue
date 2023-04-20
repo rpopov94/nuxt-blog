@@ -1,5 +1,16 @@
 <template>
   <div class="mt-5">
+    <div class="text-center"> <h1>I'm Popov Roman</h1></div>
+    <div class="text-center">
+      <img
+        src="images/avatar.jpg"
+        class="img-fluid"
+        style="width: 500px;"
+      >
+    </div>
+    <welcome />
+    <div class="text-center"><h3>List my projects</h3></div>
+    <hr>
     <b-row>
       <b-col v-for="(article, id) in articles" :key="id" md="4">
         <div class="mb-2">
@@ -10,7 +21,7 @@
             img-top
             tag="article"
             class="h-100"
-            style="min-height: 400px; max-width: 400px"
+            style="min-height: 200px; max-width: 400px"
           >
             <b-card-text>
               {{ article.abstract }}
@@ -36,5 +47,3 @@ export default {
   }
 }
 </script>
-
-<style scoped></style>

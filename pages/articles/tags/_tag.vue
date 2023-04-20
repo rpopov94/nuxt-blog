@@ -20,7 +20,7 @@
                   {{ tag.layout }}
                 </h5>
                 <p>{{ tag.abstract }}</p>
-                <b-button :href="'/articles/' + tag.slug" class="card-link">
+                <b-button :href="'/nuxt_portfolio_blog/articles/' + tag.slug" class="card-link">
                   Go
                 </b-button>
               </div>
