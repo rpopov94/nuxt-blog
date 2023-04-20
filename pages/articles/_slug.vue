@@ -15,7 +15,6 @@
         <h6 class="prose leading-9 font-italic font-weight-light">
           Описание: {{ article.abstract }}
         </h6>
-        <Tags :tags="'' + article.tags" />
         <p class="blog-date text-gray-500 mb-4">
           Последнее обновление: {{ formatDate(article.updatedAt) }}
         </p>
