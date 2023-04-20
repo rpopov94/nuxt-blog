@@ -1,6 +1,6 @@
 <template>
   <div class="mt-5">
-    <div class="text-center"> <h1>I'm Popov Roman</h1></div>
+    <div class="text-center"> <h1>Hi! I'm Popov Roman</h1></div>
     <div class="text-center">
       <img
         src="images/avatar.jpg"
