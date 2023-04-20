@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/", {data:[{}],fetch:{},mutations:[["projects\u002FSET_PROJECTS",[{slug:"test",path:"\u002Fprojects\u002Ftest"}]]]});
