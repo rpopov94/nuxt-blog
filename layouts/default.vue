@@ -4,7 +4,6 @@
     <b-container>
       <nuxt />
     </b-container>
-    <Footer />
   </div>
 </template>
 
