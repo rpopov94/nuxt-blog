@@ -16,7 +16,7 @@
       <div class="col-md-6 order-md-1">
         <div class="text-center">
           <img
-            src="images/avatar.jpg"
+            src="/images/avatar.jpg"
             class="img-fluid"
             style="width: 300px;"
           >
