@@ -1,6 +1,6 @@
 <template>
   <div class="vh-100 mt-5">
-    <div class="text-center"><h1>Contacts</h1></div>
+    <div class="text-center mb-5"><h1>Contacts</h1></div>
     <div class="row">
       <div class="col-md-6 order-md-2">
         <div>
