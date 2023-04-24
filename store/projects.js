@@ -36,15 +36,11 @@ export const actions = {
       .only([
         'layout',
         'title',
-        'comments',
-        'permalink',
-        'github',
         'image',
         'path',
         'date',
-        'slug',
-        'content',
-        'abstract'
+        'abstract',
+        'link'
       ])
       .sortBy('date', 'desc')
       .fetch()
