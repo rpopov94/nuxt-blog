@@ -39,7 +39,7 @@
 export default {
   props: {
     title: String,
-    items: Object
+    items: Array
   }
 }
 </script>
