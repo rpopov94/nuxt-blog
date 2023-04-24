@@ -7,16 +7,20 @@
   </div>
 </template>
 
-<script>
-import Navbar from '~/components/Navbar.vue'
-
-export default {
-  components: { Navbar }
-}
-</script>
-
 <style>
 .p-4 {
   padding: 0.5rem !important;
+}
+.title {
+   color: black;
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: bold;
+}
+.title:focus{
+  color: red;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
 }
 </style>
