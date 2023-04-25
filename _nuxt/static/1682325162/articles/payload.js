@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/articles", {data:[{}],fetch:{},mutations:[["articles\u002FSET_ARTICLES",[{slug:"python_basics",layout:"Основы Python. Типы данных",abstract:"Эта статья включает в себя описание основ Python, таких как типы данных, переменные, условные операторы, циклы и функции.",image:"basics.png",date:"2023-03-27T00:00:00.000Z",path:"\u002Farticles\u002Fpython_basics"}]]]});
