@@ -17,7 +17,7 @@
    font-size: 20px;
    font-weight: bold;
 }
-.title:focus{
+.title:hover{
   color: red;
   text-decoration: none;
   font-size: 20px;
