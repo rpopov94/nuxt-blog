@@ -17,7 +17,15 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/bootstrap/dist/css/bootstrap.min.css' },
+      { rel: 'stylesheet', type: 'text/css', href: 'https://unpkg.com/bootstrap-vue@2.0.0/dist/bootstrap-vue.min.css' }
+    ],
+    script: [
+      { src: 'https://unpkg.com/vue@2.6.14/dist/vue.min.js' },
+      { src: 'https://unpkg.com/bootstrap-vue@2.0.0/dist/bootstrap-vue.min.js' }
+    ]
   },
 
   loading: { color: '#fff' },
