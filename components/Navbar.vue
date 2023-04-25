@@ -1,6 +1,6 @@
 <template>
   <div class="text-center temp">
-    <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar toggleable="sm" type="dark" variant="info">
       <b-navbar-brand href="/">
         Popov Roman
       </b-navbar-brand>
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style scoped>
-.temp {
-  font-size: 24px;
-}
+  .temp {
+    font-size: 24px;
+  }
 </style>
