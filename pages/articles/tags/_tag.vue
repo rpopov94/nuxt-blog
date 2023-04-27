@@ -1,34 +1,21 @@
 <template>
   <div class="mt-4">
-    <div class="container min-vh-100">
-      <main class="pb-5">
-        <div v-if="tags.length === 0">
-          <error />
-        </div>
-        <div v-else>
-          <div v-for="(tag, id) in tags" :key="id" md="4">
-            <div class="card mb-3">
-              <img
-                v-if="tag.image"
-                :src="'images/' + tag.image"
-                class="card-img-top img-fluid"
-                :alt="tag.image"
-                style="max-height: 200px"
-              >
-              <div class="card-body">
-                <h5 class="card-title">
-                  {{ tag.layout }}
-                </h5>
-                <p>{{ tag.abstract }}</p>
-                <b-button :href="'/nuxt_portfolio_blog/articles/' + tag.slug" class="card-link">
-                  Go
-                </b-button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </div>
+    <main class="pb-5">
+      <div v-if="tags.length === 0">
+        <error />
+      </div>
+      <div v-else>
+        <h1 class="mb-5 text-center">
+          Список статей по тегу #{{ title }}
+        </h1>
+        <hr>
+        <b-row>
+          <b-col v-for="(tag, id) in tags" :key="id" md="4">
+            <item :item="tag" class="theme" />
+          </b-col>
+        </b-row>
+      </div>
+    </main>
   </div>
 </template>
 
@@ -51,14 +38,16 @@ export default {
 
     tags = tags.filter(x => !x.path.startsWith('/projects/'))
     return {
-      tags
+      tags,
+      title: params.tag
     }
   }
 }
 </script>
 
 <style scoped>
-div {
-  display: block;
+.tag {
+  background-color: #41b38a;
+  transition: transform 0.2s;
 }
 </style>

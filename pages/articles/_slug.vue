@@ -18,6 +18,7 @@
         <p class="blog-date text-gray-500 mb-4">
           Последнее обновление: {{ formatDate(article.updatedAt) }}
         </p>
+        <Tags :tags="article.tags" limit="10" />
         <hr>
         <nuxt-content class="markdown" :document="article" />
       </main>

@@ -1,6 +1,10 @@
 ---
 layout: Итераторы vs генераторы
 abstract: В статье рассмотрены что такое итераторы и генераторы в Python
+tags:
+  - iterators
+  - generators
+  - basic_python
 image: iter_and_gens.png
 ---
 

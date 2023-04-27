@@ -1,6 +1,9 @@
 ---
 layout: Методы Python, которые необходимо знать
 abstract: "В статье рассмотрены основные методы языка python, необходимо знать чтобы успешно его изучать"
+tags:
+  - basic_methods
+  - basic_python
 image: basics.png
 ---
 

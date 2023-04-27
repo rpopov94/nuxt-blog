@@ -6,7 +6,7 @@
     <hr>
     <b-row>
       <b-col v-for="(item, id) in items" :key="id" md="4">
-        <item :item="item"/>
+        <item :item="item" />
       </b-col>
     </b-row>
   </div>

@@ -12,10 +12,10 @@
   padding: 0.5rem !important;
 }
 .title {
-   color: black;
-   text-decoration: none;
-   font-size: 20px;
-   font-weight: bold;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
 }
 .title:hover{
   color: red;

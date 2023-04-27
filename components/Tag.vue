@@ -1,12 +1,9 @@
 <template>
-  <nuxt-link :key="tag" :to="'/articles/tags/' + tag">
+  <nuxt-link :key="tag" :to="localePath(`/blog/tags/${tag}/`)">
     <div
       class="
         px-2
         text-lg
-        text-white
-        rounded-lg
-        bg-black
         mx-1
         mt-1
         uppercase
@@ -38,12 +35,10 @@ export default {
 </script>
 
 <style scoped>
-div {
-  display: flex;
-}
+
 .tag {
   color: black;
-  background-color: #17a2b8;
+  background-color: white;
   transition: transform .2s;
 }
 .tag:hover {

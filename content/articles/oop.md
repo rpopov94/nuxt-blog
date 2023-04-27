@@ -1,6 +1,9 @@
 ---
 layout: Объектно-ориентированное программирование в Python
 abstract: "В статье рассмотрены возможности python в ООП"
+tags:
+  - oop
+  - basic_python
 image: oop.png
 ---
 

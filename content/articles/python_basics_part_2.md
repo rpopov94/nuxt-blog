@@ -1,8 +1,9 @@
 ---
 layout: Основы Python. Часть 2
 abstract: "Эта статья включает в себя описание основ Python, таких как условные операторы, циклы и функции."
+tags:
+  - basic_python
 image: basics.png
-date: 2023-03-27
 ---
 # Основы Python. Часть 2
 
