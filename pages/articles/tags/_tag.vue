@@ -23,7 +23,7 @@
 
 export default {
   async asyncData ({ $content, params }) {
-    let tags = await $content({ deep: true })
+    const tags = await $content({ deep: true })
       .only([
         'layout',
         'image',
