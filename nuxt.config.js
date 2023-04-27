@@ -3,9 +3,6 @@ export default {
   env: {
     baseUrl: process.env.API_URL || 'https://rpopov94.github.io'
   },
-  generate: {
-    dir: 'docs'
-  },
   head: {
     title: 'Popov Roman',
     meta: [
@@ -61,6 +58,14 @@ export default {
         ...projects.map(p => p.path),
         ...articles.map(a => a.path)
       ]
+    }
+  },
+  generate: {
+    dir: 'docs',
+    async routes () {
+      const { $content } = require('@nuxt/content')
+      const posts = await $content({ deep: true }).only(['path']).fetch()
+      return posts.map(x => x.path)
     }
   },
   build: {
