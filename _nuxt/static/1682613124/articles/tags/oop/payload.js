@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/articles/tags/oop", (function(a){return {data:[{tags:[{slug:a,layout:"Объектно-ориентированное программирование в Python",abstract:"В статье рассмотрены возможности python в ООП",tags:[a,"basic_python"],image:"oop.png"}],title:a}],fetch:{},mutations:[]}}("oop")));
