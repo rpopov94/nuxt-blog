@@ -35,8 +35,6 @@ export default {
       .where({ tags: { $containsAny: [params.tag] } })
       .sortBy('date', 'desc')
       .fetch()
-
-    tags = tags.filter(x => !x.path.startsWith('/projects/'))
     return {
       tags,
       title: params.tag
