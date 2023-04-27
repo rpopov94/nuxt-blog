@@ -10,7 +10,7 @@
           <b-nav-item href="/articles">
             Articles
           </b-nav-item>
-          <b-nav-item href="/files/resume.pdf">
+          <b-nav-item href="/resume.pdf">
             Resume
           </b-nav-item>
         </b-navbar-nav>
