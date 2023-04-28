@@ -1,6 +1,7 @@
 <template>
   <div class="mt-5">
     <items-cloud title="Articles" :items="articles" />
+<!--    <b-pagination v-model="currentPage" :total-rows="totalRows" :per-page="perPage" />-->
   </div>
 </template>
 
