@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/articles/tags/протоколы", (function(a){return {data:[{tags:[{slug:"http_methods",layout:"Сеть интернет и сетевые протоколы",abstract:"В статье описано как работает интеренет и сетевые протоколы.",tags:["network",a],image:"protocols.png"}],title:a}],fetch:{},mutations:[]}}("протоколы")));
