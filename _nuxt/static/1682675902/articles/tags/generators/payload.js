@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/articles/tags/generators", (function(a){return {data:[{tags:[{slug:"iterators_and_generators",layout:"Итераторы vs генераторы",abstract:"В статье рассмотрены что такое итераторы и генераторы в Python",tags:["iterators",a,"basic_python"],image:"iter_and_gens.png"}],title:a}],fetch:{},mutations:[]}}("generators")));

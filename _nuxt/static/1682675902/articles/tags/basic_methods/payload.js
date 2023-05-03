@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/articles/tags/basic_methods", (function(a){return {data:[{tags:[{slug:"basics_methods",layout:"Методы Python, которые необходимо знать",abstract:"В статье рассмотрены основные методы языка python, необходимо знать чтобы успешно его изучать",tags:[a,"basic_python"],image:"basics.png"}],title:a}],fetch:{},mutations:[]}}("basic_methods")));
